@@ -5,9 +5,9 @@ Cada máquina se llama SWAP1 y SWAP2 respectivamente. He creado una interfaz sol
 ## Acceso por ssh de una máquina a otra
 Mediante la orden ssh usuario@direccionIP nos conectamos como "usuario" a la máquina en dicha dirección ip, en mi caso es la conexión de SWAP2 a SWAP1.
 
-![img](https://raw.githubusercontent.com/widowert/swap/practica1/images/ssh.jpg) 
+![img](https://raw.githubusercontent.com/widowert/swap/master/practica1/images/ssh.jpg) 
 
 ## Acceso por curl de una máquina a otra
 Para esta conexión solo he hecho una petición html al servidor Apache de una de mis máquina para que me devuelva la página que creamos al principio de la página (de SWAP1 a SWAP2).
 
-![img](https://raw.githubusercontent.com/widowert/swap/practica1/images/curl.jpg)
+![img](https://raw.githubusercontent.com/widowert/swap/master/practica1/images/curl.jpg)
