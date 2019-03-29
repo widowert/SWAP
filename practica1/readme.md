@@ -11,3 +11,6 @@ Mediante la orden ssh usuario@direccionIP nos conectamos como "usuario" a la má
 Para esta conexión solo he hecho una petición html al servidor Apache de una de mis máquina para que me devuelva la página que creamos al principio de la página (de SWAP1 a SWAP2).
 
 ![img](https://raw.githubusercontent.com/widowert/swap/master/practica1/images/curl.jpg)
+
+* [Práctica 2](https://widowert.github.io/SWAP/practica2/) 
+
