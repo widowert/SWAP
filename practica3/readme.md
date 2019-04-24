@@ -5,6 +5,7 @@
 Para esta práctica tenemos que modificar un poco el esquema de red que teníamos anteriormente en la práctica 2. 
 
 >![img](https://raw.githubusercontent.com/widowert/swap/master/practica3/images/networkSqueme.png)
+
 > Nuevo esquema de red.
 
 Vamos a añadir una nueva máquina intermedia que funcione como balanceador de carga (m3-b) , esta máquina será Ubuntu Server (un máquina virtual) y balanceará la carga mediante software (Nginx).
