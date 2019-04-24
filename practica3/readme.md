@@ -22,13 +22,10 @@ Para la configuración básica de Nginx, nos vamos a /etc/nginx/conf.d/default.c
 
 > Además podemos definir los pesos de los servidores, es decir, la cantidad de carga que le será redireccionada, suponiendo que el que reciba más carga es un máquina más potente.
 > Por ejemplo, para que un servidor tenga el doble de carga: 
-> `upstream apaches {`
-> 
-	>> `server 192.168.77.3 weight=1;`
-	>
-	>> `server 192.168.77.4 weight=2;`
-	>
-> `}`
+`upstream apaches {
+	server 192.168.77.3 weight=1;
+	server 192.168.77.4 weight=2;	
+ }`
 
 Tras esta configuración todo podría funcionar correctamente tras el reinicio del servicio Nginx, aunque puede no funcionar el balanceo, esto se debe a una directiva en el archivo de configuración (/etc/nginx/nginx.conf) que debemos comentar (esta directiva configura nginx como servidor web y no como balanceador):
 ![img](https://raw.githubusercontent.com/widowert/swap/master/practica3/images/nginxConf2.png)
