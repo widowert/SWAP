@@ -35,7 +35,7 @@ Ahora solo nos falta configurar nuestra máquina balanceadora para que pueda red
 # Configurando cortafuegos y haciendo script básico
 En Ubuntu Server, según he comprobado en mi máquina, cuando nos referimos al firewall como servicio utilizamos `ufw`, `ufw enable/disable`,etc. Cuando queremos añadir o quitar reglas podemos hacerlo mediante `iptables` que modifica las tablas que utiliza `ufw` para su funcionamiento.
 - Primero vamos a crear el script donde podemos ver algunos ejemplos de uso de iptables:
->![img](https://raw.githubusercontent.com/widowert/swap/master/practica4/images/copiaSSL.png)
+>![img](https://raw.githubusercontent.com/widowert/swap/master/practica4/images/scriptUFW.png)
 Las dos primeras limpian las reglas que hubiera, las 3 siguientes establecen las políticas por defecto, las 2 siguientes permiten como salida las conexiones nuevas, establecidas y relacionadas y como entrada las establecidas y las relacionadas, las 2 ultimas permiten tanto de entrada como de salida los puertos de SSH, HTTP y HTTPS por tcp. 
 - Ahora reiniciamos el servicio ufw `service ufw restart`
 - Y activamos si no lo estuviera el ufw `ufw enable`
