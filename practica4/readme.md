@@ -1,4 +1,4 @@
-# Asegurar la granja web
+# Práctica 4. Asegurar la granja web.
 
 En esta práctica vamos a configurar ciertas medidas de seguridad para nuestra granaja web, estas medidas serán:
 - Instalar un certificado SSL autofirmado para configurar el acceso por HTTPS a los servidores.
