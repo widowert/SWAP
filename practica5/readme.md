@@ -4,6 +4,7 @@ En esta práctica vamos a crear una base de datos en una de nuestras máquinas (
 ## Creación de la base de datos
 
 Primero empezamos creando una base de datos MySQL (base de datos "contactos"). Además de crearla vamos a añadir una tabla ("datos") y un elemento en la tabla ("oscar" y su número de teléfono):
+
 ![img](https://raw.githubusercontent.com/widowert/swap/master/practica5/images/mysqlCreate1.png)
 
 ![img](https://raw.githubusercontent.com/widowert/swap/master/practica5/images/mysqlCreate2.png)
@@ -11,6 +12,7 @@ Primero empezamos creando una base de datos MySQL (base de datos "contactos"). A
 ## Replicar base de datos MySQL con mysqldump
 
 Para exportar la bse de datos que hemos creado en un archivo .sql, el cual podremos importar en otra máquina, solo tenemos que usar una sola orden (mysqldump) aunque por seguridad y para evitar que haya actualizaciones en la base de datos mientras estamos exportándola vamos a bloquearla y desbloquearla posteriormente.
+
 ![img](https://raw.githubusercontent.com/widowert/swap/master/practica5/images/mysqldump1.png)
 
 ![img](https://raw.githubusercontent.com/widowert/swap/master/practica5/images/mysqldump2.png)
@@ -48,4 +50,6 @@ Para comprobar que se ha conectado al maestro y no hay errores ejecutamos "show 
 Y finalmente para comprobar que todo funciona, vamos a hacer un cambio en la tabla datos en el maestro y comprobar que los cambios se guardan automáticamente en el esclavo:
 
 ![img](https://raw.githubusercontent.com/widowert/swap/master/practica5/images/mysqlChangeExample.png)
+
+>Inicialmente no me funcionaba porque en la práctica anterior definimos ciertas reglas para el cortafuegos y que se ejecutaran al inicio del sistema, por ello he tenido que desactivarlo (ufw disable) aunque también podría haber añadido reglas nuevas para permitir las conexiones por el puerto 3306.
 
